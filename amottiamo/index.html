@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Nuestro Universo 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky">
+    <!-- Estrellas de fondo decorativas -->
+    <div class="bg-stars" id="bgStars"></div>
+
+    <!-- Título -->
+    <header class="header">
+      <h1>Nuestro Universo</h1>
+      <p>Toca las estrellas ✨</p>
+    </header>
+
+    <!-- Contenedor de estrellas interactivas -->
+    <div class="stars-container" id="starsContainer"></div>
+
+    <!-- Footer con mensaje y contador -->
+    <footer class="footer">
+      <p class="footer-text">Amo completamente tu perfección.</p>
+      <p class="footer-counter" id="counter">10 meses y contando…</p>
+    </footer>
+
+    <!-- Botón de música discreto -->
+    <button class="music-btn" id="musicBtn" aria-label="Música de fondo">
+      <span class="music-icon" id="musicIcon">♪</span>
+    </button>
+
+    <!-- Audio -->
+    <audio id="bgMusic" loop preload="auto">
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Modal del mensaje -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <div class="modal-star" id="modalStar">⭐</div>
+        <p class="modal-text" id="modalText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
